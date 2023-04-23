@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && touch out/.nojekyll && git checkout -- out/CNAME && git add out/ -f && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "git checkout gh-pages && git merge main && next build && touch out/.nojekyll && git checkout -- out/CNAME && git add out/ -f && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages && git checkout main"
   },
   "dependencies": {
     "@types/node": "18.16.0",
