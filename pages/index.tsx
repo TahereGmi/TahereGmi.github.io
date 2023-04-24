@@ -1,8 +1,5 @@
 import Night from '@/components/Night'
 import Day from '@/components/Day'
-// import { Inter } from 'next/font/google'
-
-// const inter = Inter({ subsets: ['latin'] })
 
 const getTimeZoneByDay = () => {
   const date = new Date();
@@ -15,6 +12,9 @@ export default function Home() {
   return (
   <main className={`flex min-h-screen flex-col items-center justify-between`}>
     {getTimeZoneByDay() ? <Day /> : <Night />}
+    <div className='introduction'>
+      <h3>Comming sooooon...</h3>
+    </div>
   </main>
   )
 }

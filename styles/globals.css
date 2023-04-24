@@ -2,12 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+.introduction {
+  position: fixed;
+  color: #000;
+  background: rgba(255,255,255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);;
 }
