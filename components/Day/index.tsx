@@ -2,9 +2,6 @@ import styles from './day.module.scss'
 
 export default function Day() {
     return (
-      <main
-        className={`flex min-h-screen flex-col items-center justify-between`}
-      >
         <div className={styles.canvas}>
             <div className={styles.sun}>
                 <div className={styles.circle}></div>
@@ -31,7 +28,6 @@ export default function Day() {
                 </div>
             </div>
         </div>
-      </main>
     )
   }
   
