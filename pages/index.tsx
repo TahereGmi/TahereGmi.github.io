@@ -2,7 +2,7 @@ import Night from '@/components/Night'
 import Day from '@/components/Day'
 import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 const getTimeZoneByDay = () => {
   const date = new Date();
