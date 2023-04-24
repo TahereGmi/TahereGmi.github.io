@@ -1,14 +1,20 @@
-import Image from 'next/image'
+import Night from '@/components/Night'
+import Day from '@/components/Day'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
+const getTimeZoneByDay = () => {
+  const date = new Date();
+  const current_hour = date.getHours();
+  const is_day = (current_hour >= 6 && current_hour < 19);
+  return is_day;
+}
+
 export default function Home() {
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
-    >
-      <h1>Holaaaaaa</h1>
-    </main>
+    <>
+      {getTimeZoneByDay() ? <Day /> : <Night />}
+    </>
   )
 }
