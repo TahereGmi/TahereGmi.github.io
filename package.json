@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "next build && touch out/.nojekyll && git checkout -- out/CNAME && git add out/ -f && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
+    "deploy": "git checkout gh-pages && git merge main && next build && touch out/.nojekyll && git checkout -- out/CNAME && git add out/ -f && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages && git checkout main"
   },
   "dependencies": {
     "@types/node": "18.16.0",
@@ -20,6 +20,7 @@
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.62.0",
     "tailwindcss": "3.3.1",
     "typescript": "5.0.4"
   }
