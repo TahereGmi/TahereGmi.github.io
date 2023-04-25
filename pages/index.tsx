@@ -12,9 +12,6 @@ export default function Home() {
   return (
   <main className={`flex min-h-screen flex-col items-center justify-between`}>
     {getTimeZoneByDay() ? <Day /> : <Night />}
-    <div className='introduction'>
-      <h3>Comming sooooon...</h3>
-    </div>
   </main>
   )
 }
