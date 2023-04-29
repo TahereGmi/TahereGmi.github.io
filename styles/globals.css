@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.introduction {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    color: #fff;
+}

@@ -1,4 +1,4 @@
-// import Saturn from '../Saturn';
+import Saturn from '../Saturn';
 import styles from './night.module.scss';
 
 export default function Night() {
@@ -18,7 +18,7 @@ export default function Night() {
                 <div className={styles.cotton}></div>
                 </div>
             </div>
-            {/* <Saturn /> */}
+            <Saturn />
         </div>
     )
 }
