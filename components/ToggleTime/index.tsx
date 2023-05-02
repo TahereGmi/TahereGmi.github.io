@@ -1,10 +1,15 @@
 import styles from './toggleTime.module.scss';
 
-type Props = { toggleToNight: boolean };
+interface Props { 
+    toggleToNight: boolean;
+    onClick: () => void;
+};
 
-const ToggleTime: React.FunctionComponent<Props> = ({ toggleToNight }) => {
+const ToggleTime: React.FunctionComponent<Props> = ({ toggleToNight, onClick }) => {
     return (
-        <div className={`${styles.toggleWrapper} ${toggleToNight ? styles.nightDesign : styles.dayDesign}`}>
+        <div 
+            onClick={onClick}
+            className={`${styles.toggleWrapper} ${toggleToNight ? styles.nightDesign : styles.dayDesign}`}>
             {toggleToNight ? <span className={styles.tinyMoon} /> : <span className={styles.tinySun} />}
         </div>
     )
