@@ -1,28 +1,37 @@
+import { useState, useEffect } from 'react';
 import Night from '@/components/Night'
 import Day from '@/components/Day'
 import ToggleTime from '@/components/ToggleTime';
 
 
-const getTimeZoneByDay = (shouldHaveDay: boolean) => {
-  const date = new Date();
-  const current_hour = date.getHours();
-  const is_day = (current_hour >= 6 && current_hour < 19);
-  return shouldHaveDay || is_day;
-}
+const Home: React.FunctionComponent = () =>{
+  const [skyTheme, setSkyTheme] = useState<boolean>(false)
 
-const changeTheme = () => {
-  getTimeZoneByDay(true);
-}
+  const getTimeZoneByDay = () => {
+    const date = new Date();
+    const current_hour = date.getHours();
+    const is_day = (current_hour >= 6 && current_hour < 19);
+    return is_day;
+  }
+  
+  useEffect(() => {
+    setSkyTheme(getTimeZoneByDay())
+  }, [])
 
-export default function Home() {
+  const changeTheme = () => {
+    setSkyTheme(!skyTheme)
+  }
+
   return (
   <main className={`flex min-h-screen flex-col items-center justify-between`}>
-    <ToggleTime toggleToNight={getTimeZoneByDay(false)} onClick={() => changeTheme()}/>
-    {getTimeZoneByDay(false) ? <Day /> : <Night />}
+    <ToggleTime toggleToNight={skyTheme} onClick={() => changeTheme()}/>
+    {skyTheme === null ? <div>Loading</div> : skyTheme ? <Day /> : <Night />}
     <div className='introduction'>
-      <h1>Tahereh Gholami</h1>
-      <p>Front-End Developer</p>
+      <div>Tahereh Gholami</div>
+      <div>Front-End Developer</div>
     </div>
   </main>
   )
 }
+
+export default Home;
