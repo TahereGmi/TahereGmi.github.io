@@ -27,5 +27,29 @@
     height: 15px;
     display: block;
     border-radius: 50%;
-    background-color: #f0d94a;
+    background-color: #e5b740;
+}
+
+.sunShine {
+    position: absolute;
+    height: 6px;
+    width: 1px;
+    transform: rotate(-59deg);
+    background: #e5b740;
+    left: 4px;
+    top: 7px;
+
+    &:before,
+    &:after {
+        content: "";
+        height: 6px;
+        width: 1px;
+        left: 4px;
+        background: #e5b740;
+        position: absolute;
+    }
+
+    &:before {
+        transform: rotate(-79deg);
+    }
 }
