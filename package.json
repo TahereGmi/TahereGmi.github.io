@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && sass **/*.scss",
     "start": "next start",
     "lint": "next lint",
     "deploy": "git checkout gh-pages && git merge main && next build && touch out/.nojekyll && git checkout -- out/CNAME && git add out/ -f && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages && git checkout main"
