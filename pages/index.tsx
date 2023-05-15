@@ -8,16 +8,16 @@ import Introduction from '@/components/Introduction';
 const Home: React.FunctionComponent = () =>{
   const [skyTheme, setSkyTheme] = useState<boolean>(false)
 
+  useEffect(() => {
+    setSkyTheme(getTimeZoneByDay())
+  }, [])
+
   const getTimeZoneByDay = () => {
     const date = new Date();
     const current_hour = date.getHours();
     const is_day = (current_hour >= 6 && current_hour < 19);
     return is_day;
   }
-  
-  useEffect(() => {
-    setSkyTheme(getTimeZoneByDay())
-  }, [])
 
   const changeTheme = () => {
     setSkyTheme(!skyTheme)
