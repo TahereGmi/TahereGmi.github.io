@@ -3,6 +3,7 @@ import Night from '@/components/Night'
 import Day from '@/components/Day'
 import ToggleTime from '@/components/ToggleTime';
 import Introduction from '@/components/Introduction';
+import Icon from '@/public/img/smart-logo.svg';
 
 
 const Home: React.FunctionComponent = () =>{
@@ -26,6 +27,7 @@ const Home: React.FunctionComponent = () =>{
   return (
   <main className={`flex min-h-screen flex-col items-center justify-between`}>
     <ToggleTime toggleToNight={skyTheme} onClick={() => changeTheme()}/>
+    <Icon />
     {skyTheme === null ? <div>Loading</div> : skyTheme ? <Day /> : <Night />}
     <Introduction />
   </main>
