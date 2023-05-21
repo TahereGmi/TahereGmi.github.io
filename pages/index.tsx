@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 import Night from '@/components/Night'
 import Day from '@/components/Day'
 import ToggleTime from '@/components/ToggleTime';
@@ -6,9 +6,10 @@ import Introduction from '@/components/Introduction';
 import Icon from '@/public/img/smart-logo.svg';
 
 
-const Home: React.FunctionComponent = () =>{
+const Home: FC = () =>{
   const [skyTheme, setSkyTheme] = useState<boolean>(false)
 
+  // momoize
   useEffect(() => {
     setSkyTheme(getTimeZoneByDay())
   }, [])
