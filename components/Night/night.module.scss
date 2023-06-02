@@ -132,13 +132,11 @@
       rgba(220, 220, 255, 0.6)
     );
     transform: rotate(35deg);
-    -webkit-transform: rotate(35deg);
     top: 30px;
     left: 40vw;
     border-radius: 100%;
     opacity: 1;
     animation: shoot 4s linear infinite;
-    -webkit-animation: shoot 4s linear infinite;
 }
   
 /* CLOUDS */
@@ -173,12 +171,7 @@
   
 .cotton {
     background: #979dac;
-    background: -moz-linear-gradient(top,  #979dac 5%, #f1f1f1 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(5%,#979dac), color-stop(100%,#f1f1f1));
-    background: -webkit-linear-gradient(top,  #979dac 5%,#f1f1f1 100%);
-    background: -o-linear-gradient(top,  #979dac 5%,#f1f1f1 100%);
-    background: -ms-linear-gradient(top,  #979dac 5%,#f1f1f1 100%);
-    background: linear-gradient(top,  #979dac 5%,#f1f1f1 100%);
+    background: linear-gradient(to top,  #979dac 5%,#f1f1f1 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#979dac', endColorstr='#f1f1f1',GradientType=0 );
     
     -webkit-border-radius: 25px;
