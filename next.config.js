@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '',
-  assetPrefix: 'https://tahereh.me',
-  experimental: {
-    appDir: true,
-  },
+  // basePath: '',
+  // assetPrefix: 'https://tahereh.me',
+  // experimental: {
+  //   appDir: true,
+  // },
   images: {
     loader: 'akamai',
     path: ''
