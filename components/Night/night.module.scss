@@ -150,36 +150,20 @@
 }
   
 .cloud1 {
-    -webkit-animation: animateCloud-1 4s linear infinite;
-    -moz-animation: animateCloud-1 4s linear infinite;
     animation: animateCloud-1 4s linear infinite;
-    -webkit-transform: scale(0.5);
-    -moz-transform: scale(0.5);
     transform: scale(0.5);
     opacity: 0.8;
 }
   
 .cloud2 {
-    -webkit-animation: animateCloud-2 4s linear infinite;
-    -moz-animation: animateCloud-2 4s linear infinite;
     animation: animateCloud-2 4s linear infinite;
-    -webkit-transform: scale(0.3);
-    -moz-transform: scale(0.3);
     transform: scale(0.3);
     opacity: 0.6;
 }
   
 .cotton {
-    background: #979dac;
-    background: linear-gradient(to top,  #979dac 5%,#f1f1f1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#979dac', endColorstr='#f1f1f1',GradientType=0 );
-    
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
+    background: #979dac;    
     border-radius: 25px;
-    
-    -webkit-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 8px 5px rgba(0, 0, 0, 0.1);
 
     height: 60px;
@@ -195,8 +179,6 @@
 }
   
 .cotton:after {
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
     border-radius: 50px;
     height: 50px;
     left: 25px;
@@ -205,8 +187,6 @@
 }
   
 .cotton:before {
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
     border-radius: 100px;
     width: 90px;
     height: 90px;
