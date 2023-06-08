@@ -1,18 +1,18 @@
 .canvas{
-    position: absolute;
-    width:200px;
-    height:90px;
-    top: 450px;
-    right: 170px;
+  position: absolute;
+  width: 200px;
+  height: 90px;
+  left: 130px;
+  bottom: 90px;
 }
   
 .circ{
-    position:relative;
-    width:75px;
-    height:75px;
-    border-radius:100%;
-    background:#2b3a4c;
-    margin: 0 auto;
+  position:relative;
+  width:75px;
+  height:75px;
+  border-radius:100%;
+  background:#2b3a4c;
+  margin: 0 auto;
 }
 
   .circ::before{
