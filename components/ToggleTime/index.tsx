@@ -5,7 +5,7 @@ interface Props {
     onClick: () => void;
 };
 
-const ToggleTime: React.FunctionComponent<Props> = ({ toggleToNight, onClick }) => {
+const ToggleTime: React.FC<Props> = ({ toggleToNight, onClick }) => {
     return (
         <div 
             onClick={onClick}

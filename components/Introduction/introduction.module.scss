@@ -4,3 +4,21 @@
     left: 10%;
     color: #fff;
 }
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff; }
+    to { text-shadow: 0 0 20px #ffffff, 0 0 30px #ffffff, 0 0 40px #ffffff; }
+}
+
+.title {
+    font-size: 18px;
+}
+
+.isNight {
+    animation: glow 2s ease-in-out infinite alternate;
+    color: #ffffff;
+}
+
+.isDay {
+    color: #473b3b;
+}

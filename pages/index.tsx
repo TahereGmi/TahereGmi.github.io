@@ -9,7 +9,6 @@ import Introduction from '@/components/Introduction';
 const Home: FC = () =>{
   const [skyTheme, setSkyTheme] = useState<boolean>(false)
 
-  // momoize
   useEffect(() => {
     setSkyTheme(getTimeZoneByDay())
   }, [])
@@ -27,10 +26,10 @@ const Home: FC = () =>{
 
   return (
   <main className={`flex min-h-screen flex-col items-center justify-between`}>
-    <ToggleTime toggleToNight={skyTheme} onClick={() => changeTheme()}/>
+    {/* <ToggleTime toggleToNight={skyTheme} onClick={() => changeTheme()}/> */}
     {/* <Icon /> */}
     {skyTheme === null ? <div>Loading</div> : skyTheme ? <Day /> : <Night />}
-    <Introduction />
+    <Introduction status={skyTheme}/>
   </main>
   )
 }
