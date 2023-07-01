@@ -1,17 +1,16 @@
+import { FC } from 'react';
 import styles from './introduction.module.scss'
 
-interface IDayProps {
-    status: boolean;
-}
+interface IIntroductionProps {}
 
-const Day: React.FC<IDayProps> = ({ status }) => {
+const IIntroduction: FC<IIntroductionProps> = () => {
     return (
         <div className={styles.introduction}>
-            <h1 className={`${styles.title} ${status ? styles.isDay : styles.isNight}`}>Tahereh Gholami</h1>
-            <h2 className={`${styles.title} ${status ? styles.isDay : styles.isNight}`}>Front-End Developer</h2>
+            <h1 className={styles.title}>Tahereh Gholami</h1>
+            <h2 className={styles.title}>Front-End Developer</h2>
         </div>
     )
 }
 
-export default Day;
+export default IIntroduction;
   

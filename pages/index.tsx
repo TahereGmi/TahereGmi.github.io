@@ -1,9 +1,10 @@
-import React, { useState, useEffect, FC } from 'react';
+import React, { FC } from 'react';
 import Introduction from '@/components/Introduction';
+import Header from '@/components/Header';
 
 
 const Home: FC = () =>{
-  const [skyTheme, setSkyTheme] = useState<boolean>(false)
+  // const [skyTheme, setSkyTheme] = useState<boolean>(false)
 
   // useEffect(() => {
   //   setSkyTheme(getTimeZoneByDay())
@@ -22,7 +23,8 @@ const Home: FC = () =>{
 
   return (
   <main className={`flex min-h-screen flex-col items-center justify-between`}>
-    <Introduction status={skyTheme}/>
+    <Header />
+    <Introduction />
   </main>
   )
 }
