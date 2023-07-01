@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import Introduction from '@/components/Introduction';
 import Header from '@/components/Header';
+import styles from './home.module.scss';
 
 
 const Home: FC = () =>{
@@ -24,6 +25,9 @@ const Home: FC = () =>{
   return (
   <main className={`flex min-h-screen flex-col items-center justify-between`}>
     <Header />
+    <div id="home" className={styles.home}>Home</div>
+    <div id="about" className={styles.about}>about</div>
+    <div id="contact" className={styles.contact}>Contact</div>
     <Introduction />
   </main>
   )
