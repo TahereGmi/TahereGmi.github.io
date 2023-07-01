@@ -11,6 +11,7 @@ const ContactMe: FC<Props> = () => {
             <span>Github</span>
             <span>Medium</span>
             <span>LinkedIn</span>
+            <span>Code pen</span>
         </div>
     )
 };
