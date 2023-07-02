@@ -31,7 +31,7 @@ const Header: React.FC = () => {
 
   return (
     <nav className={styles.header}>
-      <a href="#home" className="smooth-link">Home</a>
+      <a href="#home" className={`smooth-link ${styles.firstLink}`}>Home</a>
       <a href="#about" className="smooth-link">About</a>
       <a href="#contact" className="smooth-link">Contact</a>
     </nav>
