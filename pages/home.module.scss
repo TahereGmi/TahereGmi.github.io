@@ -1,20 +1,16 @@
 .defaultHeight {
     width: 100%;
     display: flex;
-    min-height: 100vh;
 }
 
 .home {
-    background-color: #444;
-    @extend .defaultHeight;
-}
-
-.about {
-    background-color: #ddd;
+    // background-color: #444;
+    min-height: 100vh;
     @extend .defaultHeight;
 }
 
 .contact {
-    background-color: #4ff;
+    // background-color: #4ff;
+    min-height: 500px;
     @extend .defaultHeight;
 }

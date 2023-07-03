@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-.lamp-svg  {
-    justify-self: center;
-    fill: none;
-    stroke: #869EBA;
-    stroke-width: 3;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-miterlimit: 10;
-    max-height: 900px;
+.isFixedLink {
+    position: fixed;
+    left: 30px;
+}
+
+.smooth-link {
+    display: block;
 }

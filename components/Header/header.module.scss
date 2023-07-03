@@ -1,10 +1,40 @@
 .header {
     width: 100%;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 2;
-    height: 70px;
+    height: 45px;
+    line-height: 45px;
     display: flex;
     justify-content: space-between;
-    background-color: #fff;
+    padding: 0 30px;
+    justify-content: flex-end;
+}
+
+.textIcon {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    color: #869EBA;
+    padding-bottom: 10px;
+    position: relative;
+    margin-left: -20px;
+    &:after {
+        content: "";
+        width: 60px;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        background-color: #869EBA;
+        bottom: 18px;
+    }
+}
+
+.svgWrap {
+    justify-self:center;
+    fill: none;
+    stroke: #869EBA;
+    stroke-width: 3;
 }
