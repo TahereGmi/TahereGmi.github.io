@@ -33,13 +33,15 @@ const Header: React.FC = () => {
 
   return (
     <nav className={styles.header}>
-      <a href="#home" className="smooth-link isFixedLink">
-        <span className={styles.textIcon}>
-            <Bird className={styles.svgWrap}/>
-            <span className={styles.text}>Tahereh</span>
-        </span>
-      </a>
-      <a href="#contact" className="smooth-link">Contact</a>
+      <div className='container ml-auto mr-auto'>
+        <a href="#home" className="smooth-link isFixedLink">
+          <span className={styles.textIcon}>
+              <Bird className={styles.svgWrap}/>
+              <span className={styles.text}>Tahereh</span>
+          </span>
+        </a>
+        <a href="#contact" className="smooth-link">Contact</a>
+      </div>
     </nav>
   );
 };
