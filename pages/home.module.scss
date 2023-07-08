@@ -4,13 +4,11 @@
 }
 
 .home {
-    // background-color: #444;
     min-height: 100vh;
     @extend .defaultHeight;
 }
 
 .contact {
-    // background-color: #4ff;
     min-height: 500px;
     @extend .defaultHeight;
 }

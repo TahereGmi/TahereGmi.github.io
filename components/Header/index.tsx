@@ -33,7 +33,7 @@ const Header: React.FC = () => {
 
   return (
     <nav className={styles.header}>
-      <div className='container ml-auto mr-auto'>
+      <div className='container ml-auto mr-auto flex flex-row-reverse'>
         <a href="#home" className="smooth-link isFixedLink">
           <span className={styles.textIcon}>
               <Bird className={styles.svgWrap}/>
