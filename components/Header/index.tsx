@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import Bird from '@/public/img/bird.svg';
 import styles from './header.module.scss';
 
 const Header: React.FC = () => {
@@ -33,14 +32,9 @@ const Header: React.FC = () => {
 
   return (
     <nav className={styles.header}>
-      <div className='container ml-auto mr-auto flex flex-row-reverse'>
-        <a href="#home" className="smooth-link isFixedLink">
-          <span className={styles.textIcon}>
-              <Bird className={styles.svgWrap}/>
-              <span className={styles.text}>Tahereh</span>
-          </span>
-        </a>
+      <div className='container ml-auto mr-auto flex flex-row-reverse justify-between'>
         <a href="#contact" className="smooth-link">Contact</a>
+        <a href="#home" className="smooth-link isFixedLink">Tahereh</a>
       </div>
     </nav>
   );
