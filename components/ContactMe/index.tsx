@@ -6,12 +6,11 @@ interface Props {};
 const ContactMe: FC<Props> = () => {
     return (
         <div className={styles.contactWrapper}>
-            <span className={styles.contactMe}>Contact Me</span>
-            <span>Email</span>
-            <span>Github</span>
-            <span>Medium</span>
-            <span>LinkedIn</span>
-            <span>Code pen</span>
+            <a href="mailto:mstgholami@gmail.com" className={styles.contactMe}>Contact Me</a>
+            <a href="https://github.com/TahereGmi" target="_blank">Github</a>
+            <a href="https://medium.com/@tgholami" target="_blank">Medium</a>
+            <a href="https://www.linkedin.com/in/taheregholami/" target="_blank">LinkedIn</a>
+            <a href="https://codepen.io/taheregmi" target="_blank">Code pen</a>
         </div>
     )
 };

@@ -3,6 +3,7 @@ import Introduction from '@/components/Introduction';
 import Header from '@/components/Header';
 import styles from './home.module.scss';
 import Avatar from '@/components/Avatar';
+import ContactMe from '@/components/ContactMe';
 
 
 const Home: FC = () =>{
@@ -16,7 +17,9 @@ const Home: FC = () =>{
         <Introduction />
       </div>
     </div>
-    <div id="contact" className={styles.contact}>Contact</div>
+    <div id="contact" className={styles.contact}>
+      <ContactMe />
+    </div>
   </main>
   )
 }
