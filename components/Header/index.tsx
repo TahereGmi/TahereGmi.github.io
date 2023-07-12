@@ -34,7 +34,7 @@ const Header: React.FC = () => {
     <nav className={styles.header}>
       <div className='container ml-auto mr-auto flex flex-row-reverse justify-between'>
         <a href="#contact" className="smooth-link">Contact</a>
-        <a href="#home" className="smooth-link isFixedLink">Tahereh</a>
+        <a href="#home" className="smooth-link">Tahereh</a>
       </div>
     </nav>
   );
