@@ -5,7 +5,7 @@ interface Props {};
 
 const ContactMe: FC<Props> = () => {
     return (
-        <div className={styles.contactWrapper}>
+        <div className="flex container ml-auto mr-auto">
             <a href="mailto:mstgholami@gmail.com" className={styles.contactMe}>Contact Me</a>
             <a href="https://github.com/TahereGmi" target="_blank">Github</a>
             <a href="https://medium.com/@tgholami" target="_blank">Medium</a>
