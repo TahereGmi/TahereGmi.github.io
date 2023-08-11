@@ -2,7 +2,21 @@ This is a my portfolio project bootstrapped with [`create-next-app`](https://git
 
 ## Getting Started
 
-First, run the development server:
+First, Specify node version:
+
+```bash
+nvm use
+
+```
+
+Then Install Dependecies:
+
+```bash
+yarn
+
+```
+
+And Run the development server:
 
 ```bash
 yarn dev
