@@ -2,7 +2,7 @@ This is a my portfolio project bootstrapped with [`create-next-app`](https://git
 
 ## Getting Started
 
-First, Specify node version:
+First, Specify the node version:
 
 ```bash
 nvm use

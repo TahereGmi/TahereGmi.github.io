@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
-import Introduction from '@/components/Introduction';
-import Header from '@/components/Header';
+import Introduction from '@/src/components/Introduction';
+import Header from '@/src/components/Header';
 import styles from './home.module.scss';
-import Avatar from '@/components/Avatar';
-import ContactMe from '@/components/ContactMe';
+import Avatar from '@/src/components/Avatar';
+import ContactMe from '@/src/components/ContactMe';
 
 
 const Home: FC = () =>{
